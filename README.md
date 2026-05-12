@@ -7,3 +7,6 @@ The aim of this project is to improve the following:
 - subscription growth
 - revenue optimization
 - user engagement
+
+to write-
+objectives, planned analyses...
