@@ -8,25 +8,32 @@ The aim of this project is to improve the following:
 - revenue optimization
 - user engagement
 
-*Dataset contains 1000 entries.
-*For normalization later - columns & datatypes-
-customer_id = text, 
-subscription_length_(months) = int,
-customer_satisfaction_score_(1-10) = int,
-daily_watch_time_(hours) = int,
-engagement_rate_(1-10) = int,
-device_used_most_often = text,
-genre_preference = text,
-region = text,
-payment_history_(on-time/delayed) = text,
-subscription_plan = text,
-churn_status_(yes/no) = text,
-support_queries_logged = int,
-age = int,
-monthly_income_($) = int,
-promotional_offers_used = int,
-number_of_profiles_created = int
-*No incomplete records
+* Dataset contains 1000 entries.
+* For normalization later - columns & datatypes-
+- customer_id = text, 
+- subscription_length_(months) = int,
+- customer_satisfaction_score_(1-10) = int,
+- daily_watch_time_(hours) = int,
+- engagement_rate_(1-10) = int,
+- device_used_most_often = text,
+- genre_preference = text,
+- region = text,
+- payment_history_(on-time/delayed) = text,
+- subscription_plan = text,
+- churn_status_(yes/no) = text,
+- support_queries_logged = int,
+- age = int,
+- monthly_income_($) = int,
+- promotional_offers_used = int,
+- number_of_profiles_created = int
+*-No incomplete records
+
+### new tables
+- staging.cleaned_customers (all)
+- analytics.users (id, age, region, monthly_income)
+- analytics.subscriptions (id, user_id, sub_plan, sub_months, churn_status, promo_offers_used, profiles_created)
+- analytics.engagement (id, user_id, daily_watch_hours, eng_rate, satisfaction_score, device, genre)
+- analytics.billing (id, user_id, pay_status, monthly_income)
 
 -------------------------------------------------------
 to write-
