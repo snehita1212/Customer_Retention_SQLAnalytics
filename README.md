@@ -34,6 +34,14 @@ The aim of this project is to improve the following:
 - analytics.subscriptions (id, user_id, sub_plan, sub_months, churn_status, promo_offers_used, profiles_created)
 - analytics.engagement (id, user_id, daily_watch_hours, eng_rate, satisfaction_score, device, genre)
 - analytics.billing (id, user_id, pay_status, monthly_income)
+- analytics.support (id, user_id, support_queries)
+
+### making a customer intelligence mart
+all columns from all tables in one place
+
+### queries
+- churn rate (plan, total_customers, returning_customers, returning_rate -- in desc)
+- customer segments in 'marts' ()
 
 -------------------------------------------------------
 to write-
