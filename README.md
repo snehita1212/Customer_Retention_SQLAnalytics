@@ -40,8 +40,11 @@ The aim of this project is to improve the following:
 all columns from all tables in one place
 
 ### queries
-- churn rate (plan, total_customers, returning_customers, returning_rate -- in desc)
-- customer segments in 'marts' ()
+- churn rate by plan(plan, total_customers, returning_customers, returning_rate -- in desc) = basic > premium > standard
+- customer segments in 'marts' on engagement type (power > active > moerate > passive)
+- ranking by daily_watch_hours - window function
+- regional revenue by assigning numbers to each plan (basic = 2,standard = 6, premium = 10)
+- churn risk (to define a score for each category and then add to find the risk factor, )
 
 -------------------------------------------------------
 to write-
