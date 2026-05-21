@@ -45,7 +45,8 @@ all columns from all tables in one place
 - ranking by daily_watch_hours - window function
 - regional revenue by assigning numbers to each plan (basic = 2,standard = 6, premium = 10) = Asia -- do once more
 - churn risk (to define a score for each category and then add to find the risk factor, parameters = satisfaction_Score, engagement_rate, daily_watch_hours, sub_length_months, support_queries_log, payment_status) = gave 21 distinct risk scores
-- income quartile vs type of subscription plan
+- income quartile vs type of subscription plan (using ntile 4)
+- performance optimization----------checkout----------------
 
 -------------------------------------------------------
 to write-
