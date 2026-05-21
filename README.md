@@ -41,10 +41,11 @@ all columns from all tables in one place
 
 ### queries
 - churn rate by plan(plan, total_customers, returning_customers, returning_rate -- in desc) = basic > premium > standard
-- customer segments in 'marts' on engagement type (power > active > moerate > passive)
+- customer segments in 'marts' on engagement type (power > active > moderate > passive)
 - ranking by daily_watch_hours - window function
-- regional revenue by assigning numbers to each plan (basic = 2,standard = 6, premium = 10)
-- churn risk (to define a score for each category and then add to find the risk factor, )
+- regional revenue by assigning numbers to each plan (basic = 2,standard = 6, premium = 10) = Asia -- do once more
+- churn risk (to define a score for each category and then add to find the risk factor, parameters = satisfaction_Score, engagement_rate, daily_watch_hours, sub_length_months, support_queries_log, payment_status) = gave 21 distinct risk scores
+- income quartile vs type of subscription plan
 
 -------------------------------------------------------
 to write-
