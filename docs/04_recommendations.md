@@ -1,7 +1,7 @@
 # Business Recommendations
 
 ### 1) Strengthen Older Customer Retention Programs
-To implement a structured onboarding and engagement program after the first few months of customer lifecycle.
+To implement a structured onboarding and engagement program after the first few months of customer lifecycle.<br>
 Potential initiatives:
 * Personalized content recommendations
 * Promotional retention offers
@@ -9,11 +9,11 @@ Potential initiatives:
 **Impact:** Reducing churn among older subscribers can further improve lifetime value.
 
 ### 2) Prioritize Customer Engagement Improvement Initiatives
-To conduct deeper investigation into customers with engagement rates between 7 and 9 to identify retention drivers.
+To conduct deeper investigation into customers with engagement rates between 7 and 9 to identify retention drivers.<br>
 **Impact:** Improving engagement rate can reduce churn while increasing customer loyalty.
 
 ### 3) Launch Targeted Retention Campaigns in Asia
-To develop region-specific retention strategies for Asian customers to reduce churn.
+To develop region-specific retention strategies for Asian customers to reduce churn.<br>
 Potential initiatives:
 * Localized content recommendations
 * Regional marketing campaigns
@@ -22,7 +22,7 @@ Potential initiatives:
 **Impact:** Reducing churn in the highest-risk geographic market can improve overall retention performance.
 
 ### 4) Monitor Delayed-Payment Customers
-To set up monitoring and intervention workflows for viewers showing delayed payment patterns.
+To set up monitoring and intervention workflows for viewers showing delayed payment patterns.<br>
 Potential initiatives:
 * Automated payment reminders
 * Flexible payment options
@@ -30,11 +30,11 @@ Potential initiatives:
 **Impact:** Addressing payment-related friction may reduce churn and improve revenue stability.
 
 ### 5) Investigate Documentary Audience Retention Challenges
-To perform deeper analysis of documentary viewers to understand potential dissatisfaction drivers.
+To perform deeper analysis of documentary viewers to understand potential dissatisfaction drivers.<br>
 **Impact:** Improving retention among the highest-risk content segment may reduce overall churn and improve audience engagement.
 
 ### 6) Optimize Smart TV Viewing Experience
-To evaluate 'Smart TV' user experience and content discovery process.
+To evaluate 'Smart TV' user experience and content discovery process.<br>
 Potential initiatives:
 * Faster navigation
 * Improved application performance
@@ -42,8 +42,8 @@ Potential initiatives:
 **Impact:** Increasing watch time among Smart TV users will strengthen engagement and reduce long-term churn risk.
 
 ### 7) Develop Predictive Retention Operations
-To deploy the churn risk model as a retention tool.
-Potential initiatives include:
+To deploy the churn risk model as a retention tool.<br>
+Potential initiatives:
 * Automated risk monitoring
 * Proactive customer outreach
 * Targeted retention incentives
