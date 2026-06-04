@@ -1,7 +1,7 @@
 # Methodology
 
 ## Project Architecture
-Raw Dataset (CSV) → Raw Schema Layer → Staging Layer → Normalized Analytics Layer → Customer Intelligence Layer → Derive insights from SQL queries → Dashboard creation → Project Insights
+Raw Dataset (CSV) → Raw Schema Layer → Staging Layer → Normalized Analytics Layer → Customer Intelligence Layer → Derive insights from SQL queries → Dashboard creation → Project Insights. <br>
 This method separates data import, cleaning, transformation, analysis, and reporting steps.
 
 ## Data Source
