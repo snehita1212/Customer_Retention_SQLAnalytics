@@ -1,53 +1,91 @@
-# Customer_Retention_SQLAnalytics
+# NovaStream Customer Retention Analytics 
 
-## Business Overview
-NovaStream is a fictional subscription-based streaming platform that operates globally with multiple subscription plans. The platform tracks user subscriptions, engagement behavior, watch history, payments, and content preferences.
-The aim of this project is to improve the following:
-- customer retention
-- subscription growth
-- revenue optimization
-- user engagement
+An end-to-end customer retention analytics project built using PostgreSQL, Neon, SQL, and Power BI. The project transforms raw customer data into actionable business insights through data modeling, churn analysis, customer segmentation, and dashboard reporting.
 
-* Dataset contains 1000 entries.
-* For normalization later - columns & datatypes-
-- customer_id = text, 
-- subscription_length_(months) = int,
-- customer_satisfaction_score_(1-10) = int,
-- daily_watch_time_(hours) = int,
-- engagement_rate_(1-10) = int,
-- device_used_most_often = text,
-- genre_preference = text,
-- region = text,
-- payment_history_(on-time/delayed) = text,
-- subscription_plan = text,
-- churn_status_(yes/no) = text,
-- support_queries_logged = int,
-- age = int,
-- monthly_income_($) = int,
-- promotional_offers_used = int,
-- number_of_profiles_created = int
-*-No incomplete records
+## Tech Stack
 
-### new tables
-- staging.cleaned_customers (all)
-- analytics.users (id, age, region, monthly_income)
-- analytics.subscriptions (id, user_id, sub_plan, sub_months, churn_status, promo_offers_used, profiles_created)
-- analytics.engagement (id, user_id, daily_watch_hours, eng_rate, satisfaction_score, device, genre)
-- analytics.billing (id, user_id, pay_status, monthly_income)
-- analytics.support (id, user_id, support_queries)
+* PostgreSQL
+* Neon
+* SQL
+* Power BI
+* GitHub
 
-### making a customer intelligence mart
-all columns from all tables in one place
+## Architecture
 
-### queries
-- churn rate by plan(plan, total_customers, returning_customers, returning_rate -- in desc) = basic > premium > standard
-- customer segments in 'marts' on engagement type (power > active > moderate > passive)
-- ranking by daily_watch_hours - window function
-- regional revenue by assigning numbers to each plan (basic = 2,standard = 6, premium = 10) = Asia -- do once more
-- churn risk (to define a score for each category and then add to find the risk factor, parameters = satisfaction_Score, engagement_rate, daily_watch_hours, sub_length_months, support_queries_log, payment_status) = gave 21 distinct risk scores
-- income quartile vs type of subscription plan (using ntile 4)
-- performance optimization----------checkout----------------
+![Project Architecture](images/project_architecture.jpeg)
 
--------------------------------------------------------
-to write-
-objectives, planned analyses...
+## Data Model
+
+![ER Diagram](images/er_diagram.jpeg)
+
+The dataset was normalized into Users, Subscriptions, Engagement, Billing, and Support.<br>
+A Customer Intelligence Mart was also developed for analysis.
+
+## Dashboard Preview
+
+### Executive Summary
+
+![Executive Summary](images/dashboard/page 1 - executive_summary.jpeg)
+
+### Churn Intelligence
+
+![Churn Intelligence](images/dashboard/churn_intelligence.png)
+
+### Behavioral Intelligence
+
+![Behavioral Intelligence](images/dashboard/behavioral_intelligence.png)
+
+### Revenue & Segmentation
+
+![Revenue & Segmentation](images/dashboard/revenue_segmentation.png)
+
+### Churn Risk Model
+
+![Churn Risk Model](images/dashboard/risk_model.png)
+
+---
+
+## Key Findings
+
+* Subscription tenure emerged as the strongest churn indicator.
+* Customer satisfaction demonstrated a strong relationship with retention outcomes.
+* Asia exhibited the highest churn concentration within the dataset.
+* Standard plan subscribers experienced the highest churn rates.
+* Delayed-payment customers displayed elevated churn behavior.
+* Documentary-preferring customers exhibited the highest average churn-risk scores.
+* Laptop users recorded the highest average watch hours, while Smart TV users recorded the lowest.
+* A notable engagement anomaly was observed among customers aged 67.
+
+---
+
+## Project Structure
+
+```text
+novastream-retention-analytics/
+├── sql/
+├── docs/
+├── diagrams/
+├── images/
+├── dashboard/
+├── dataset/
+└── README.md
+```
+
+---
+
+## Documentation
+
+Additional project documentation is available in:
+
+* `docs/project_overview.md`
+* `docs/methodology.md`
+* `docs/key_insights.md`
+* `docs/recommendations.md`
+* `docs/limitations.md`
+
+---
+
+## Author
+
+Snehita Debnath
+B.Tech Computer Science & Engineering, IIT Jammu
